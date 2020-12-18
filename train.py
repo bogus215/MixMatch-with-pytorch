@@ -206,8 +206,8 @@ def training(args):
 
             test_loss, test_acc = losses.avg, top1.avg
 
-            console.print(f"Train [{epoch:>04}]/[{args.epoch:>03}]",f"Train acc:{train_acc:.4f}",f"valid acc:{val_acc:.4f}",f"Test acc:{test_acc}",end=' | ', style="Bold Cyan")
-            console.print(f"Train loss:{train_loss:.4f}",f"train loss_x:{train_loss_x:.4f}",f"Train loss_u:{train_loss_u}",end=' | ', style="Bold Cyan")
+            console.print(f"Train [{epoch:>04}]/[{args.epoch:>03}]",f"Train acc:{train_acc:.4f}",f"valid acc:{val_acc:.4f}",f"Test acc:{test_acc}",sep='  |  ', style="Bold Cyan")
+            console.print(f"Train loss:{train_loss:.4f}",f"train loss_x:{train_loss_x:.4f}",f"Train loss_u:{train_loss_u}",sep='  |  ', style="Bold Cyan")
 
             wandb.log({'Train acc': train_acc,
                        'Valid acc': val_acc,
