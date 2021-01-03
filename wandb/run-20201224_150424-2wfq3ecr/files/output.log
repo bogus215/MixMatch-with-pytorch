@@ -1,0 +1,7 @@
+wandb: WARNING Calling run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+===> epoch 0
+  0%|          | 0/1024 [00:00<?, ?it/s]

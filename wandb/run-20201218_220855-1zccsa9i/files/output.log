@@ -1,0 +1,14 @@
+wandb: WARNING Calling run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+===> epoch 0
+  0%|          | 0/39 [00:00<?, ?it/s]                                      Traceback (most recent call last):
+  File "D:/2020-2/비즈니스애널리틱스/논문리뷰/MixMatch-with-pytorch/train_normal.py", line 158, in <module>
+    main()
+  File "D:/2020-2/비즈니스애널리틱스/논문리뷰/MixMatch-with-pytorch/train_normal.py", line 153, in main
+    training(args)
+  File "D:/2020-2/비즈니스애널리틱스/논문리뷰/MixMatch-with-pytorch/train_normal.py", line 44, in training
+    outputs = args.model_ema(inputs)
+AttributeError: 'Namespace' object has no attribute 'model_ema'

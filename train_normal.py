@@ -41,9 +41,9 @@ def training(args):
                 inputs = inputs.cuda(args.gpu_device)
                 targets = targets.cuda(args.gpu_device)
 
-                outputs = args.model_ema(inputs)
-                outputs = F.softmax(outputs, dim =1)
+                outputs = args.model(inputs)
                 loss = criterion(outputs , targets.long())
+                outputs = F.softmax(outputs, dim =1)
 
                 # measure accuracy and record loss
                 prec1, prec5 = accuracy(outputs, targets, topk=(1, 5))
@@ -73,9 +73,9 @@ def training(args):
                     inputs = inputs.cuda(args.gpu_device)
                     targets = targets.cuda(args.gpu_device)
 
-                    outputs = args.model_ema(inputs)
-                    outputs = F.softmax(outputs, dim =1)
+                    outputs = args.model(inputs)
                     loss = criterion(outputs,targets.long())
+                    outputs = F.softmax(outputs, dim =1)
 
                     # measure accuracy and record loss
                     prec1, prec5 = accuracy(outputs, targets, topk=(1, 5))
@@ -93,16 +93,16 @@ def training(args):
             top1 = AverageMeter()
             top5 = AverageMeter()
 
-            args.model_ema.eval()
+            args.model.eval()
 
             with torch.no_grad():
                 for batch_idx, (inputs, targets) in enumerate(args.loader.test_iter):
                     inputs = inputs.cuda(args.gpu_device)
                     targets = targets.cuda(args.gpu_device)
 
-                    outputs = args.model_ema(inputs)
-                    outputs = F.softmax(outputs, dim =1)
+                    outputs = args.model(inputs)
                     loss = criterion(outputs, targets.long())
+                    outputs = F.softmax(outputs, dim =1)
 
                     # measure accuracy and record loss
                     prec1, prec5 = accuracy(outputs, targets, topk=(1, 5))
@@ -127,6 +127,7 @@ def training(args):
                 print('Early stopping')
                 break
 
+
 # %% main
 def main():
     wandb.init(project='PyTorch MixMatch Training', reinit=True)
@@ -135,7 +136,7 @@ def main():
     parser.add_argument("--epoch", default=1024, type=int, help="number of max epoch")
     parser.add_argument('--batch_size', type=int, default=64, help='batch size for training')
     parser.add_argument("--gpu_device", default=0, type=int, help="the number of gpu to be used")
-    parser.add_argument('--experiment', type=str, default='1218_normal', help='experiment name')
+    parser.add_argument('--experiment', type=str, default='0102_normal', help='experiment name')
     parser.add_argument('--n_labeled', type=int, default=250, help='Number of labeled data')
     parser.add_argument('--seed', type=int, default=1, help='seed')
     parser.add_argument('--train-iteration', type=int, default=1024,help='Number of iteration per epoch')

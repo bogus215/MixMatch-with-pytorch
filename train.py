@@ -250,8 +250,9 @@ def main():
     parser.add_argument("--epoch", default=1024, type=int, help="number of max epoch")
     parser.add_argument('--batch_size', type=int, default=64, help='batch size for training')
     parser.add_argument("--gpu_device", default=0, type=int, help="the number of gpu to be used")
-    parser.add_argument('--experiment', type=str, default='1218_Mixmatch', help='experiment name')
+    parser.add_argument('--experiment', type=str, default='1218_Mixmatch_drop', help='experiment name')
     parser.add_argument('--n_labeled', type=int, default=250, help='Number of labeled data')
+    parser.add_argument('--dropout', type=float, default=0.2, help='dropout rate')
     parser.add_argument('--seed', type=int, default=1, help='seed')
     parser.add_argument('--alpha', default=0.75, type=float, help ='beta distribution parameter')
     parser.add_argument('--lambda-u', default=75, type=float, help = 'unsupervised loss decay')
@@ -266,8 +267,8 @@ def main():
     wandb.run.name = args.experiment
     wandb.run.save()
     args.loader = loader_CIFAR10(args)
-    args.model = WideResNet(num_classes=10).cuda(args.gpu_device)
-    args.model_ema = WideResNet(num_classes=10).cuda(args.gpu_device)
+    args.model = WideResNet(num_classes=10, dropRate= args.dropout).cuda(args.gpu_device)
+    args.model_ema = WideResNet(num_classes=10, dropRate= args.dropout).cuda(args.gpu_device)
     for param in args.model_ema.parameters():
         param.detach_()
     wandb.watch(args.model)

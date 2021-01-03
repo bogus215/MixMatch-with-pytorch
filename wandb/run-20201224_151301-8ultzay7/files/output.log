@@ -1,0 +1,13 @@
+wandb: WARNING Calling run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+===> epoch 0
+  0%|          | 0/1024 [00:00<?, ?it/s]                                        Traceback (most recent call last):
+  File "D:/2020-2/비즈니스애널리틱스/논문리뷰/MixMatch-with-pytorch/train_bayes.py", line 74, in training
+    p = (torch.softmax(outputs_u, dim=1) + torch.softmax(outputs_u2, dim=1)) / 2
+TypeError: softmax() received an invalid combination of arguments - got (tuple, dim=int), but expected one of:
+ * (Tensor input, name dim, *, torch.dtype dtype)
+ * (Tensor input, int dim, torch.dtype dtype)
+

@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.7.6",
+    "heartbeatAt": "2020-12-24T06:13:05.632513",
+    "startedAt": "2020-12-24T06:13:01.605510",
+    "docker": null,
+    "gpu": "GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "train_bayes.py",
+    "program": "D:/2020-2/\ube44\uc988\ub2c8\uc2a4\uc560\ub110\ub9ac\ud2f1\uc2a4/\ub17c\ubb38\ub9ac\ubdf0/MixMatch-with-pytorch/train_bayes.py",
+    "git": {
+        "remote": "https://github.com/bogus215/MixMatch-with-pytorch.git",
+        "commit": "3bf69ea22409829e80f28f6361def040c0e5874e"
+    },
+    "email": "wlstn215@gmail.com",
+    "root": "D:/2020-2/\ube44\uc988\ub2c8\uc2a4\uc560\ub110\ub9ac\ud2f1\uc2a4/\ub17c\ubb38\ub9ac\ubdf0/MixMatch-with-pytorch",
+    "host": "DESKTOP-3D6A7UI",
+    "username": "Jinsoo",
+    "executable": "C:\\Users\\Jinsoo\\Anaconda3\\envs\\torch\\python.exe"
+}

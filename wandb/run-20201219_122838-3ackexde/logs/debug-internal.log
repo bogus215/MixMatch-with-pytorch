@@ -1,0 +1,417 @@
+2020-12-19 12:28:39,596 INFO    MainThread:19032 [internal.py:wandb_internal():63] W&B internal server running at pid: 19032
+2020-12-19 12:28:39,597 INFO    WriterThread:19032 [datastore.py:open_for_write():76] open: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\run-3ackexde.wandb
+2020-12-19 12:28:39,598 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: check_version
+2020-12-19 12:28:39,599 DEBUG   SenderThread:19032 [sender.py:send():90] send: header
+2020-12-19 12:28:39,599 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:28:39,599 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: check_version
+2020-12-19 12:28:39,601 DEBUG   Thread-8  :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2020-12-19 12:28:39,758 DEBUG   Thread-8  :19032 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-19 12:28:39,802 DEBUG   SenderThread:19032 [sender.py:send():90] send: run
+2020-12-19 12:28:39,820 DEBUG   SenderThread:19032 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, '지정된 파일을 찾을 수 없습니다', None, 2, None)
+2020-12-19 12:28:39,822 DEBUG   SenderThread:19032 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-19 12:28:39,870 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:40,108 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:28:40,143 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: run_start
+2020-12-19 12:28:40,148 INFO    SenderThread:19032 [dir_watcher.py:__init__():165] watching files in: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files
+2020-12-19 12:28:40,148 INFO    SenderThread:19032 [sender.py:_start_run_threads():490] run started: 3ackexde with start time 1608348518
+2020-12-19 12:28:40,148 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:40,149 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:40,174 DEBUG   HandlerThread:19032 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-19 12:28:40,260 DEBUG   HandlerThread:19032 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch, universal_newlines=False, shell=None, istream=None)
+2020-12-19 12:28:40,553 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: status
+2020-12-19 12:28:40,553 DEBUG   SenderThread:19032 [sender.py:send():90] send: files
+2020-12-19 12:28:40,553 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-12-19 12:28:40,554 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:28:40,554 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: status
+2020-12-19 12:28:40,556 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:40,564 DEBUG   Thread-17 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:40,749 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:28:40,750 DEBUG   SenderThread:19032 [sender.py:send():90] send: config
+2020-12-19 12:28:40,754 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:40,776 DEBUG   Thread-17 :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:28:40,781 DEBUG   Thread-17 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-19 12:28:40,976 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:28:40,980 DEBUG   SenderThread:19032 [sender.py:send():90] send: run
+2020-12-19 12:28:40,985 DEBUG   SenderThread:19032 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-19 12:28:41,034 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:41,149 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\config.yaml
+2020-12-19 12:28:41,149 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_created():213] file/dir created: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:28:41,150 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_created():213] file/dir created: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-metadata.json
+2020-12-19 12:28:41,150 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_created():213] file/dir created: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:41,150 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_created():213] file/dir created: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\requirements.txt
+2020-12-19 12:28:41,187 DEBUG   Thread-17 :19032 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/bogus215/PyTorch%20MixMatch%20Training/3ackexde/wandb-metadata.json?Expires=1608434921&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=KL1PfaNNPyMT2%2FoR23ZhkF7UrBD2vhhsC%2BC0Kn5zrsPWIDv2jKRQAXE%2BxScDp%2BY1lsgYJMvf7DlmNSBONXuuRUtb3WrcWn%2Bi6QdFoJktYG58pCVGQdg%2F5D0nlPyvEx5UPNcVzVf4YF1FQUtCdzfIoN8lzfVip8gsakrcZdsrmILd0Y4I1bNSVozhxN3Lv%2Bhs5Tehh6MEaB3ePChNJoRAxQMpjegwR3Hz4nHDw7HEFoeA01zdcDczezp9yzIacuzFDKvT5fXUEAi%2B2wt%2Bp0Zg30mLvhVXq0GkhvUk7BDvAzdueASuP59%2FNXFnan%2FKXcPxspsdBdMu9sxPg3CHbgEt3Q%3D%3D HTTP/1.1" 200 0
+2020-12-19 12:28:41,188 INFO    Thread-17 :19032 [upload_job.py:push():131] Uploaded file C:\Users\Jinsoo\AppData\Local\Temp\tmpr9cgj6__wandb\1w10fipi-wandb-metadata.json
+2020-12-19 12:28:41,247 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:28:41,286 INFO    SenderThread:19032 [sender.py:send_run():393] updated run: 3ackexde
+2020-12-19 12:28:43,134 DEBUG   Thread-9  :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:43,150 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:43,355 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:28:43,803 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:28:44,151 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:45,768 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:28:46,152 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:46,365 DEBUG   SenderThread:19032 [sender.py:send():90] send: files
+2020-12-19 12:28:46,365 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file media\graph\g.r.a.p.h._.0_summary_62dfd7a3.graph.json with policy now
+2020-12-19 12:28:46,365 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:46,366 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:46,367 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:46,367 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:46,367 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:46,368 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:46,368 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:46,368 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:46,370 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:46,371 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:46,372 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:46,372 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:46,376 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:46,376 DEBUG   Thread-18 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:46,377 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:46,582 DEBUG   Thread-18 :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:28:46,590 DEBUG   Thread-18 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-19 12:28:47,136 DEBUG   Thread-18 :19032 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/bogus215/PyTorch%20MixMatch%20Training/3ackexde/media/graph/g.r.a.p.h._.0_summary_62dfd7a3.graph.json?Expires=1608434927&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=InymOMycQcHDtQAjsAuRPQbkz%2FFeWr6UVnqs6R1e0zgIxedWrbvoODOnxY7lfqdu8OamBFEQ9xkQ6ybBc%2B8eHk28Bqgd0bH1VO6p9kn5q6gU1nGwCD9u%2FEn%2B%2FGhBc6eTM6NQo6hpt06cr5%2Fy0b0ayialOP0cePtkX8TX4jYRHYRDhTMrWHLgH22hNZ8GpiwJXpjKaw7HecGdDYJdQ%2FUU38jKtC59HTTiR7h%2FbHuY92zOU6jbUolrpb7odWlltDeTc25FPzEiszSZc8Xt77lcenV7sORCgMw3qOiP%2FPpMfpMdV12pvjQEkUzP2bnrytZfv0o3%2Bjh0%2B%2B%2BMdLV4CWM1UQ%3D%3D HTTP/1.1" 200 0
+2020-12-19 12:28:47,137 INFO    Thread-18 :19032 [upload_job.py:push():131] Uploaded file C:\Users\Jinsoo\AppData\Local\Temp\tmpr9cgj6__wandb\1hvagup9-media/graph/g.r.a.p.h._.0_summary_62dfd7a3.graph.json
+2020-12-19 12:28:47,153 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:28:47,154 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:47,154 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_created():213] file/dir created: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\media\graph\g.r.a.p.h._.0_summary_62dfd7a3.graph.json
+2020-12-19 12:28:47,154 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_created():213] file/dir created: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\media\graph
+2020-12-19 12:28:47,154 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_created():213] file/dir created: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\media
+2020-12-19 12:28:48,154 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:48,511 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:28:48,692 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:28:49,155 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:49,260 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:28:49,260 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:49,260 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:50,155 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:28:50,156 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:51,155 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:51,543 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:28:52,146 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:28:52,146 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:52,147 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:52,155 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:28:52,156 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:53,155 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:53,225 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:28:54,156 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:55,002 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:28:55,002 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:55,003 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:55,157 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:28:55,157 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:55,212 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:28:55,750 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: status
+2020-12-19 12:28:55,750 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:28:55,750 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: status
+2020-12-19 12:28:55,752 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:28:56,039 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:28:56,157 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:57,158 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:57,451 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:28:57,858 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:28:57,858 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:28:57,858 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:28:57,929 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:28:58,159 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:28:58,160 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:28:59,159 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:00,136 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:00,161 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:00,736 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:00,736 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:00,737 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:01,162 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:01,163 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:02,164 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:02,641 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:02,841 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:03,166 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:03,604 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:03,605 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:03,605 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:04,167 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:04,167 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:05,166 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:05,815 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:06,167 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:06,485 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:06,485 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:06,486 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:07,168 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:07,169 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:07,352 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:08,169 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:09,170 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:09,365 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:09,365 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:09,366 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:09,552 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:10,170 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:10,171 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:11,041 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: status
+2020-12-19 12:29:11,041 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:11,041 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: status
+2020-12-19 12:29:11,043 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:11,172 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:11,242 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:11,764 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:12,060 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:12,173 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:12,234 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:12,235 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:12,235 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:13,173 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:13,174 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:14,174 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:14,435 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:15,110 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:15,110 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:15,111 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:15,174 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:15,175 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:16,174 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:16,778 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:16,977 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:17,174 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:17,983 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:17,983 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:17,984 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:18,175 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:18,176 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:19,176 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:20,176 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:20,200 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:20,883 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:20,884 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:20,884 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:21,176 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:21,177 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:21,491 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:22,177 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:23,177 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:23,700 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:23,751 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:23,751 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:23,752 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:24,178 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:24,179 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:25,179 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:25,967 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:26,180 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:26,224 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:26,244 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: status
+2020-12-19 12:29:26,244 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:26,244 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: status
+2020-12-19 12:29:26,246 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:26,516 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:26,676 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:26,676 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:26,677 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:27,181 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:27,181 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:28,181 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:28,898 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:29,183 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:29,721 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:29,722 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:29,722 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:30,183 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:30,184 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:30,986 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:31,183 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:31,198 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:32,183 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:32,637 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:32,638 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:32,640 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:33,184 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:33,185 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:34,186 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:34,850 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:35,186 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:35,568 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:35,568 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:35,569 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:35,704 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:36,186 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:36,187 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:37,186 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:37,905 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:38,186 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:38,525 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:38,525 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:38,526 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:39,190 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:39,190 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:40,191 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:40,425 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:41,192 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:41,457 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:41,457 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:41,458 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:41,519 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: status
+2020-12-19 12:29:41,519 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:41,519 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: status
+2020-12-19 12:29:41,521 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:41,715 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:42,193 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:42,194 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:43,193 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:44,193 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:44,364 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:44,364 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:44,365 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:45,127 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:45,193 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:45,194 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:46,193 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:47,193 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:47,262 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:47,262 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:47,263 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:48,194 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:48,195 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:49,195 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:49,827 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:50,045 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:50,142 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:50,142 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:50,142 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:50,196 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:50,196 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:51,197 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:52,197 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:53,037 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:53,037 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:53,038 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:53,199 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:53,199 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:54,199 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:54,537 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:55,200 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:55,932 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:55,932 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:55,933 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:56,200 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:56,201 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:56,716 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: status
+2020-12-19 12:29:56,716 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:56,716 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: status
+2020-12-19 12:29:56,718 DEBUG   SenderThread:19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:56,921 DEBUG   SenderThread:19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:57,201 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:58,202 INFO    Thread-12 :19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:58,805 DEBUG   SenderThread:19032 [sender.py:send():90] send: history
+2020-12-19 12:29:58,805 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:58,806 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:58,806 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-19 12:29:58,806 DEBUG   SenderThread:19032 [sender.py:send():90] send: exit
+2020-12-19 12:29:58,806 INFO    SenderThread:19032 [sender.py:send_exit():168] handling exit code: 0
+2020-12-19 12:29:58,807 INFO    SenderThread:19032 [sender.py:send_exit():176] send defer
+2020-12-19 12:29:58,807 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:58,807 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: poll_exit
+2020-12-19 12:29:58,807 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:58,807 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 0
+2020-12-19 12:29:58,807 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:58,807 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:58,808 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-12-19 12:29:58,808 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 1
+2020-12-19 12:29:58,808 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:58,808 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 1
+2020-12-19 12:29:58,910 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:58,910 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:58,910 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-12-19 12:29:58,910 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 2
+2020-12-19 12:29:58,910 DEBUG   SenderThread:19032 [sender.py:send():90] send: stats
+2020-12-19 12:29:58,911 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:58,911 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 2
+2020-12-19 12:29:58,911 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:58,911 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:58,911 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 2
+2020-12-19 12:29:58,911 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 3
+2020-12-19 12:29:58,911 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:58,911 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 3
+2020-12-19 12:29:58,911 DEBUG   SenderThread:19032 [sender.py:send():90] send: summary
+2020-12-19 12:29:58,912 INFO    SenderThread:19032 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-19 12:29:58,912 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:58,912 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:58,912 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 3
+2020-12-19 12:29:58,912 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 4
+2020-12-19 12:29:58,913 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:58,913 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 4
+2020-12-19 12:29:58,913 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:58,913 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:58,913 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 4
+2020-12-19 12:29:58,913 INFO    SenderThread:19032 [dir_watcher.py:finish():279] shutting down directory watcher
+2020-12-19 12:29:59,209 INFO    SenderThread:19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:29:59,210 INFO    SenderThread:19032 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:29:59,211 INFO    SenderThread:19032 [dir_watcher.py:finish():309] scan: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files
+2020-12-19 12:29:59,212 INFO    SenderThread:19032 [dir_watcher.py:finish():315] scan save: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\config.yaml config.yaml
+2020-12-19 12:29:59,213 INFO    SenderThread:19032 [dir_watcher.py:finish():315] scan save: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log output.log
+2020-12-19 12:29:59,216 INFO    SenderThread:19032 [dir_watcher.py:finish():315] scan save: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\requirements.txt requirements.txt
+2020-12-19 12:29:59,234 INFO    SenderThread:19032 [dir_watcher.py:finish():315] scan save: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-metadata.json wandb-metadata.json
+2020-12-19 12:29:59,235 INFO    SenderThread:19032 [dir_watcher.py:finish():315] scan save: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json wandb-summary.json
+2020-12-19 12:29:59,240 DEBUG   Thread-19 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:59,246 DEBUG   Thread-20 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:59,267 DEBUG   Thread-21 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:59,268 INFO    SenderThread:19032 [dir_watcher.py:finish():315] scan save: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\media\graph\g.r.a.p.h._.0_summary_62dfd7a3.graph.json media\graph\g.r.a.p.h._.0_summary_62dfd7a3.graph.json
+2020-12-19 12:29:59,269 DEBUG   Thread-22 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-19 12:29:59,269 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 5
+2020-12-19 12:29:59,271 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:59,271 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 5
+2020-12-19 12:29:59,272 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:59,272 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:59,273 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 5
+2020-12-19 12:29:59,273 INFO    SenderThread:19032 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-19 12:29:59,273 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 6
+2020-12-19 12:29:59,274 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:59,274 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 6
+2020-12-19 12:29:59,275 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:59,275 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:59,275 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 6
+2020-12-19 12:29:59,479 DEBUG   Thread-19 :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:59,480 DEBUG   Thread-20 :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:59,494 DEBUG   Thread-22 :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:59,498 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:59,518 DEBUG   Thread-19 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-19 12:29:59,533 DEBUG   Thread-22 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-19 12:29:59,551 DEBUG   Thread-20 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-19 12:29:59,552 DEBUG   Thread-21 :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-19 12:29:59,558 DEBUG   Thread-21 :19032 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-19 12:29:59,706 DEBUG   Thread-9  :19032 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/bogus215/PyTorch%20MixMatch%20Training/3ackexde/file_stream HTTP/1.1" 200 None
+2020-12-19 12:29:59,712 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 7
+2020-12-19 12:29:59,714 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:59,714 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 7
+2020-12-19 12:29:59,715 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:59,716 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:59,716 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 7
+2020-12-19 12:29:59,716 INFO    SenderThread:19032 [sender.py:send_request_defer():221] send defer: 8
+2020-12-19 12:29:59,719 DEBUG   SenderThread:19032 [sender.py:send():90] send: final
+2020-12-19 12:29:59,721 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: defer
+2020-12-19 12:29:59,722 DEBUG   SenderThread:19032 [sender.py:send():90] send: footer
+2020-12-19 12:29:59,722 INFO    HandlerThread:19032 [handler.py:handle_request_defer():69] handle defer: 8
+2020-12-19 12:29:59,724 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:29:59,725 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: defer
+2020-12-19 12:29:59,725 INFO    SenderThread:19032 [sender.py:send_request_defer():185] handle sender defer: 8
+2020-12-19 12:29:59,947 DEBUG   Thread-19 :19032 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/bogus215/PyTorch%20MixMatch%20Training/3ackexde/config.yaml?Expires=1608435000&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=gDNuilkMRh6SK84Cyzy8hQZ0C5rF%2Blxw1MCpRKexBsXBRo371MbhMnfi4U2%2Bvq98qFAp%2FKV2B1j5LQ2FFB6AaXnRv%2F5A5JscbfhWqUY53TpDWx3FXbQYyUaE3toL%2F8%2Fhbz88CL1R6VTjXUqgWDHhts1jTQOm7EQ6fvFldR9XBE9NA5rqA3CHGnGEUnVBR5qYxhC5NcTNM6NAMHkYGzIsP1exXlw6OC9bWtoVzcCghHxOP5BMLcxBdJ6jxAuhfByXCJHVTuIbVGdkyyctUvkaCmdnNv1Mcyfnuv%2FSgDkQCodsNZD1Nbo5HUfhbI2FnDkxK3NPhcvbEU5G4CukcqX6ow%3D%3D HTTP/1.1" 200 0
+2020-12-19 12:29:59,950 INFO    Thread-19 :19032 [upload_job.py:push():131] Uploaded file D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\config.yaml
+2020-12-19 12:30:00,001 DEBUG   Thread-22 :19032 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/bogus215/PyTorch%20MixMatch%20Training/3ackexde/wandb-summary.json?Expires=1608435000&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=pBYCTa0NUWvaJv4%2F0NZ0or0cHfvjLhaZN1tdDfvlt1wCwJ444xmHqtZ6xjTGic0r8Ra4NSUnBQ8%2BmsFOxRuh0xEznmtipoGXh7QtCj8%2B8mvmsL7ecjt8tkvH19ohhUNY3OGpjQVEV7U%2FBl0KUgtW1Anuw9yMePDVEXKJYgew6L94TeNeqvMpjzrVELp6OH9J%2FMtu02jd32fGOWodehzuV%2BvSCSy0T4thWRjsYd0KbKDKSa6vUg%2BlaYA8eBL8dGmHTkqV4CNufH31gRAqB9mm5wm39zE%2FbiKQQJIhHaTwA6TBiJxYY%2FEjG9qbQB%2BZ6RLbxre%2FJsGEI6IAD8V6plXKtw%3D%3D HTTP/1.1" 200 0
+2020-12-19 12:30:00,003 DEBUG   Thread-21 :19032 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/bogus215/PyTorch%20MixMatch%20Training/3ackexde/requirements.txt?Expires=1608435000&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=UueeZkfU7T1wPB%2BYhdpFYedhVEF%2FDQ%2BSJZgejcuGQGXD6XB7mMrHSJM04A01O3bkC5vre0IioSYrf2Et0c5Bl65eP5mBP%2FevELeuY2JN88dhVt8Zw2UjZGeosaXYj1%2BBHlwC0FsMrQkqAmE%2F%2B2uX%2BUb1gnPYQ526i99zLwLfu8qmqwioIKEdRjWlsMVNXTbrXLOWzgmWWdtRiH5p2C7Kjm5C53S9COWj5joK9%2FJT%2F0bNQyLPtvenrKGEdMK0aP570%2FFOTn38m6JD4QNXG8s4fwGc0D4RgDsxj4vKhxO1Bef9o9XMrGfJvsu9GeswP5Mtt7ClEju%2BJoMN4v3APt3vEA%3D%3D HTTP/1.1" 200 0
+2020-12-19 12:30:00,007 INFO    Thread-22 :19032 [upload_job.py:push():131] Uploaded file D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\wandb-summary.json
+2020-12-19 12:30:00,011 INFO    Thread-21 :19032 [upload_job.py:push():131] Uploaded file D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\requirements.txt
+2020-12-19 12:30:00,159 DEBUG   Thread-20 :19032 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/bogus215/PyTorch%20MixMatch%20Training/3ackexde/output.log?Expires=1608435000&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=bx82yTvMMZsRT%2BNmu1qsctO6kpuk%2FL44sw7DULRJNwefAqHMt3V0AAewncZl8Jt84K76P7z1dTnpDrl67RgjnpddsGOeqMGrhTd9J2SdOjSeB6fbpAWhT6q6XRFBUrk1cGcw7P0SMq1IG14H6YQ4DzaIeHXJOd8ueEqxUswwSnmiD3FbamgkiKUvmxlyACcASppiyTrexq34Rhb285P5GA0ovijv6E8V963dwVHswzAYTplncHFvvbpCEdtc9SXSWTqs0FK5kyszC5lss%2F9rpi1ie8JbelDFg%2B4U45oU%2BYA%2FO490oEmsJsjvMuZkUpJs2yVERS5P%2FRibxhLHYqngdQ%3D%3D HTTP/1.1" 200 0
+2020-12-19 12:30:00,162 INFO    Thread-20 :19032 [upload_job.py:push():131] Uploaded file D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\files\output.log
+2020-12-19 12:30:00,808 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-19 12:30:00,809 DEBUG   SenderThread:19032 [sender.py:send():90] send: request
+2020-12-19 12:30:00,809 DEBUG   SenderThread:19032 [sender.py:send_request():99] send_request: poll_exit
+2020-12-19 12:30:00,809 INFO    SenderThread:19032 [file_pusher.py:join():174] waiting for file pusher
+2020-12-19 12:30:00,811 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: get_summary
+2020-12-19 12:30:00,813 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: sampled_history
+2020-12-19 12:30:00,815 DEBUG   HandlerThread:19032 [handler.py:handle_request():55] handle_request: shutdown
+2020-12-19 12:30:00,815 INFO    HandlerThread:19032 [handler.py:finish():271] shutting down handler
+2020-12-19 12:30:01,722 INFO    WriterThread:19032 [datastore.py:close():257] close: D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201219_122838-3ackexde\run-3ackexde.wandb
+2020-12-19 12:30:01,810 INFO    SenderThread:19032 [sender.py:finish():642] shutting down sender
+2020-12-19 12:30:01,810 INFO    SenderThread:19032 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-19 12:30:01,810 INFO    SenderThread:19032 [file_pusher.py:join():174] waiting for file pusher
+2020-12-19 12:30:01,812 INFO    MainThread:19032 [internal.py:handle_exit():138] Internal process exited

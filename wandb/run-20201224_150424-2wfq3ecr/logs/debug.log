@@ -1,0 +1,11 @@
+2020-12-24 15:04:24,134 INFO    MainThread:5288 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-24 15:04:24,134 INFO    MainThread:5288 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2020-12-24 15:04:24,134 INFO    MainThread:5288 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-24 15:04:24,134 INFO    MainThread:5288 [wandb_init.py:_log_setup():303] Logging user logs to D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201224_150424-2wfq3ecr\logs\debug.log
+2020-12-24 15:04:24,135 INFO    MainThread:5288 [wandb_init.py:_log_setup():304] Logging internal logs to D:\2020-2\비즈니스애널리틱스\논문리뷰\MixMatch-with-pytorch\wandb\run-20201224_150424-2wfq3ecr\logs\debug-internal.log
+2020-12-24 15:04:28,785 INFO    MainThread:5288 [wandb_run.py:_console_start():1237] atexit reg
+2020-12-24 15:04:28,786 INFO    MainThread:5288 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2020-12-24 15:04:28,786 INFO    MainThread:5288 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2020-12-24 15:04:28,786 INFO    MainThread:5288 [wandb_run.py:_redirect():1151] Redirects installed.
+2020-12-24 15:04:28,789 INFO    MainThread:5288 [wandb_run.py:_config_callback():549] config_cb None None {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.7.6', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch'}, 'learning_rate': 0.002, 'epoch': 1024, 'batch_size': 64, 'gpu_device': 0, 'experiment': '1224_temp', 'n_labeled': 250, 'seed': 1, 'alpha': 0.75, 'lambda_u': 75, 'T': 0.5, 'ema_decay': 0.999, 'train_iteration': 1024, 'weight_decay': 0.0004, 'dropout': 0.2}
+2020-12-24 15:04:34,541 INFO    MainThread:5288 [wandb_watch.py:watch():35] Watching

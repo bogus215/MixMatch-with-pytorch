@@ -96,6 +96,18 @@ class SemiLoss(object):
 
         return Lx, Lu, lambda_u * linear_rampup(epoch,epochs)
 
+class SemiLoss_bayesian(object):
+    def __call__(self, outputs_x, targets_x, outputs_u, targets_u, epoch, lambda_u,epochs):
+        probs_u = torch.softmax(outputs_u, dim=1) # unsupervised probability
+
+        Lx = -torch.mean(torch.sum(F.log_softmax(outputs_x, dim=1) * targets_x, dim=1)) # cross entropy - label data
+        Lu = torch.mean((probs_u - targets_u)**2) #
+
+        return Lx, Lu, lambda_u * linear_rampup(epoch,epochs)
+
+
+
+
 class AverageMeter(object):
     """Computes and stores the average and current value
        Imported from https://github.com/pytorch/examples/blob/master/imagenet/main.py#L247-L262
