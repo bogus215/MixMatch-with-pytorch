@@ -23,7 +23,6 @@ def training(args):
     torch.backends.cudnn.benchmark = False
 
     train_criterion = SemiLoss_bayesian()
-    criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(args.model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay)
     ema_optimizer= WeightEMA(model = args.model, ema_model= args.model_ema,lr=args.learning_rate, alpha=args.ema_decay)
     early_stopping = EarlyStopping(patience=10, verbose=False, path=f'./parameter/{args.experiment}.pth')
@@ -83,7 +82,9 @@ def training(args):
                     epistemic = torch.matmul((prob_total_u - p_bar.unsqueeze(0)).unsqueeze(3),
                                  (prob_total_u - p_bar.unsqueeze(0)).unsqueeze(2)).mean(0)
                     epistemic_score = torch.softmax(torch.diagonal(epistemic, dim1=1, dim2=2) , dim = 1)
-                    pt = p_bar ** (1 / epistemic_score)
+                    # pt = p_bar ** (1 / epistemic_score) # 0103_bayes_sample_4
+                    pt = p_bar ** (1 / args.T) # 0104_bayes_sample_5
+
                     targets_u = pt / pt.sum(dim=1, keepdim=True)
                     targets_u = targets_u.detach()
 
@@ -102,6 +103,14 @@ def training(args):
                 mixed_input = l * input_a + (1 - l) * input_b
                 mixed_target = l * target_a + (1 - l) * target_b
 
+                entropy = torch.sum(-mixed_target[args.batch_size:] * torch.log(mixed_target[args.batch_size:]+1e-10), axis=1).detach().cpu().softmax(dim=0)
+                high_entropy_score = torch.softmax(entropy,dim=0)
+                high_entropy_choice = np.random.choice(np.arange(64,mixed_target.size(0)), p = high_entropy_score.numpy(), size=int(2*args.batch_size*args.drop_unlabel),replace=False)
+                idx = torch.from_numpy(np.setdiff1d(np.arange(3*args.batch_size),high_entropy_choice)).long()
+
+                mixed_input, mixed_target = mixed_input[idx] , mixed_target[idx]
+
+
                 # interleave labeled and unlabeled samples between batches to get correct batchnorm calculation
                 mixed_input = list(torch.split(mixed_input, batch_size))
                 mixed_input = interleave(mixed_input, batch_size)
@@ -110,26 +119,26 @@ def training(args):
                 for input in mixed_input[1:]:
                     mu.append(args.model(input)[0])
                     sigma.append(args.model(input)[1])
+
                 # put interleaved samples back
                 mu , sigma = interleave(mu, batch_size) , interleave(sigma, batch_size)
 
                 logits_x = torch.zeros( (forward_stochastic,inputs_x.size(0),args.class_num)).cuda(args.gpu_device)
-                # logits_u = torch.zeros( (forward_stochastic,inputs_u.size(0)*2,args.class_num)).cuda(args.gpu_device)
+                logits_u = torch.zeros( (forward_stochastic,torch.cat(mu[1:],dim=0).size(0),args.class_num)).cuda(args.gpu_device)
                 logit_u_mu, logit_u_sigma = torch.cat(mu[1:],dim=0) , torch.cat(sigma[1:],dim=0)
                 for i in range(forward_stochastic):
                     epsilon_x = torch.randn(sigma[0].size()).cuda(args.gpu_device)
                     logit_x = mu[0] + torch.mul(sigma[0],epsilon_x)
                     logits_x[i] = logit_x
 
-                    # epsilon_u = torch.randn(torch.cat(sigma[1:],dim=0).size()).cuda(args.gpu_device)
-                    # logit_u = torch.cat(mu[1:],dim=0) + torch.mul(torch.cat(sigma[1:],dim=0),epsilon_u)
-                    # logits_u[i] = logit_u
+                    epsilon_u = torch.randn(torch.cat(sigma[1:],dim=0).size()).cuda(args.gpu_device)
+                    logit_u = logit_u_mu + torch.mul(logit_u_sigma,epsilon_u)
+                    logits_u[i] = logit_u
 
                 # logits_x = torch.mean(logits_x ,dim = 0)
                 # logits_u = torch.mean(logits_u, dim=0)
 
-                Lx, Lu, w = train_criterion(logits_x, mixed_target[:batch_size], logit_u_mu,
-                                            logit_u_sigma,mixed_target[batch_size:],
+                Lx, Lu, w = train_criterion(logits_x, mixed_target[:batch_size], logits_u,mixed_target[batch_size:],
                                       epoch + batch_idx / args.train_iteration, args.lambda_u, epochs = args.epoch) # TODO
 
                 loss = Lx + w * Lu
@@ -290,7 +299,7 @@ def main():
     parser.add_argument("--epoch", default=1024, type=int, help="number of max epoch")
     parser.add_argument('--batch_size', type=int, default=64, help='batch size for training')
     parser.add_argument("--gpu_device", default=0, type=int, help="the number of gpu to be used")
-    parser.add_argument('--experiment', type=str, default='0103_Bayes', help='experiment name')
+    parser.add_argument('--experiment', type=str, default='0104_Bayes_sample_5', help='experiment name')
     parser.add_argument('--n_labeled', type=int, default=250, help='Number of labeled data')
     parser.add_argument('--seed', type=int, default=1, help='seed')
     parser.add_argument('--alpha', default=0.75, type=float, help ='beta distribution parameter')
@@ -301,7 +310,7 @@ def main():
     parser.add_argument('--weight_decay', type=float, default=4e-4,help='model weight decay')
     parser.add_argument('--dropout', type=float, default=0.2,help='dropout rate')
     parser.add_argument('--class_num', type=int, default=10,help='class_num')
-
+    parser.add_argument('--drop_unlabel', type=float, default=0.5,help='drop rate unlabel')
 
     args = parser.parse_args()
 
@@ -313,10 +322,10 @@ def main():
     args.model_ema = WideResNet(num_classes=10, dropRate=args.dropout).cuda(args.gpu_device)
     for param in args.model_ema.parameters():
         param.detach_()
-    # wandb.watch(args.model)
+    wandb.watch(args.model)
     gc.collect()
     training(args)
-    # wandb.finish()
+    wandb.finish()
 
 # %% run
 if __name__ == "__main__":

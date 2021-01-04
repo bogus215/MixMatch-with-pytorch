@@ -89,6 +89,7 @@ def linear_rampup(current, rampup_length):
 
 class SemiLoss(object):
     def __call__(self, outputs_x, targets_x, outputs_u, targets_u, epoch, lambda_u,epochs):
+
         probs_u = torch.softmax(outputs_u, dim=1) # unsupervised probability
 
         Lx = -torch.mean(torch.sum(F.log_softmax(outputs_x, dim=1) * targets_x, dim=1)) # cross entropy - label data
@@ -97,14 +98,20 @@ class SemiLoss(object):
         return Lx, Lu, lambda_u * linear_rampup(epoch,epochs)
 
 class SemiLoss_bayesian(object):
-    def __call__(self, outputs_x, targets_x, outputs_u, targets_u, epoch, lambda_u,epochs):
-        probs_u = torch.softmax(outputs_u, dim=1) # unsupervised probability
+    def __call__(self,outputs_x,targets_x,outputs_u,targets_u,epoch,lambda_u,epochs):
 
-        Lx = -torch.mean(torch.sum(F.log_softmax(outputs_x, dim=1) * targets_x, dim=1)) # cross entropy - label data
-        Lu = torch.mean((probs_u - targets_u)**2) #
+        # probs_u = torch.softmax(output_u_mu, dim=1) # unsupervised probability
+        # u_sigma = F.softplus(output_u_sigma) + 1e-6
+        # left = 0.5 * torch.pow(u_sigma,-2) * torch.square(probs_u-targets_u)
+        # right = 0.5 * torch.log(torch.pow(u_sigma,2))
+        # Lu = torch.mean(left+right)
 
+        output_u = F.softmax(outputs_u, dim = 2).mean(axis=0)
+
+        output_x = F.softmax(outputs_x , dim =2).mean(axis=0)
+        Lx = -torch.mean(torch.sum(torch.log(output_x) * targets_x , dim = 1))
+        Lu = torch.mean((output_u - targets_u)**2)
         return Lx, Lu, lambda_u * linear_rampup(epoch,epochs)
-
 
 
 
